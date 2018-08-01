@@ -4,13 +4,17 @@ public class Main {
 	private static Scanner input;
 
 	public static void main(String[] args) {
+		
+		// Should Clean the code
 		System.out.println("\t\t\t ###################################################### \t\t\t");
 		System.out.println("\t\t\t\t\t\t CALCULATOR PROJECT \t\t\t");
 		System.out.println("\t\t\t ###################################################### \t\t\t");
 
 		char closer = 'y';
 		int res = 0;
-
+		Calculator calc;
+		calc = new Calculator();
+		// Spaghatti type code
 		do {
 			System.out.println("Enter Two Numbers: ");
 			input = new Scanner(System.in);
@@ -31,16 +35,16 @@ public class Main {
 
 			switch (operator) {
 			case '+':
-				res = tmpFirstNumber + tmpSecondNumber;
+				res = calc.add(tmpFirstNumber, tmpSecondNumber);
 				System.out.println("Your Result: " + res);
 				break;
 			case '-':
-				res = tmpFirstNumber - tmpSecondNumber;
+				res = calc.subtract(tmpFirstNumber, tmpSecondNumber);
 				System.out.println("Your Result: " + res);
 				break;
 
 			case '*':
-				res = tmpFirstNumber * tmpSecondNumber;
+				res = calc.multiplication(tmpFirstNumber, tmpSecondNumber);
 				System.out.println("Your Result: " + res);
 				break;
 
@@ -49,7 +53,7 @@ public class Main {
 					System.out.println("Invalid Number!!");
 					break;
 				} else {
-					res = tmpFirstNumber / tmpSecondNumber;
+					res = calc.division(tmpFirstNumber, tmpSecondNumber);
 					System.out.println("Your Result: " + res);
 					break;
 				}
