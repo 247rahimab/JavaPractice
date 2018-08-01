@@ -1,0 +1,9 @@
+package Class;
+public class Animal {
+	// Animal Property
+	String name;
+	String color;
+	boolean isMove = false;
+	
+}
+		

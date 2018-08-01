@@ -1,0 +1,14 @@
+pacakge TEST;
+public class World {
+	public static void main(String[] args)
+	{
+
+		System.out.println("Create the First Object: ");
+		
+		Human okayObj;
+		okayObj = new Human();
+		
+		okayObj.name = "Abdur Rahim";
+		okayObj.speak();
+	}
+}

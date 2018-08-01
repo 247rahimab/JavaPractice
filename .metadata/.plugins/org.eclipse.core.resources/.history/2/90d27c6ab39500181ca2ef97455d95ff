@@ -1,0 +1,45 @@
+import java.util.Scanner;
+
+public class Main {
+	private static Scanner input;
+
+	public static void main(String[] args) {
+		System.out.println("\t\t\t ###################################################### \t\t\t");
+		System.out.println("\t\t\t Calculator Project \t\t\t");
+		System.out.println("\t\t\t ###################################################### \t\t\t");
+		
+		System.out.println("Enter Two Numbers: ");
+		input = new Scanner(System.in);
+		int firstNumber = input.nextInt();
+		int secondNumber = input.nextInt();
+		System.out.println("choose Operations(+, -, *, /): ");
+		char operator = input.next().charAt(0);
+
+		int res = 0;
+
+		switch (operator) {
+			case '+':
+				res = firstNumber + secondNumber;
+				break;
+			case '-':
+				res = firstNumber - secondNumber;
+				break;
+	
+			case '*':
+				res = firstNumber * secondNumber;
+				break;
+	
+			case '/':
+				res = firstNumber / secondNumber;
+				break;
+	
+			default:
+				System.out.println("Please Enter the proper operator");
+				break;
+	
+		}
+		
+		System.out.println("Your Result: "+res);
+		
+	}
+}

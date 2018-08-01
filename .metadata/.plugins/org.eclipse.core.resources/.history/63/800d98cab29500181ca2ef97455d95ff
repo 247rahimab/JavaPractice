@@ -1,0 +1,41 @@
+import java.util.Scanner;
+
+public class Main {
+	private static Scanner input;
+
+	public static void main(String[] args) {
+
+		System.out.println("Calculator Project");
+
+		System.out.println("Enter Two Numbers: ");
+		input = new Scanner(System.in);
+		int firstNumber = input.nextInt();
+		int secondNumber = input.nextInt();
+		System.out.println("choose Operations(+, -, *, /): ");
+		char operator = input.next().charAt(0);
+
+		int sum = 0;
+
+		switch (operator) {
+			case '+':
+				sum = firstNumber + secondNumber;
+				break;
+			case '+':
+				sum = firstNumber + secondNumber;
+				break;
+	
+			case '+':
+				sum = firstNumber + secondNumber;
+				break;
+	
+			case '+':
+				sum = firstNumber + secondNumber;
+				break;
+	
+			default:
+				System.out.println("Please Enter the proper operator");
+				break;
+	
+			}
+	}
+}

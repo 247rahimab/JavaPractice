@@ -1,0 +1,12 @@
+
+public class World {
+	public static void main(String[] args)
+	{
+
+		System.out.println("Create the First Object: ");
+		Human humanObj;
+		humanObj = new Human();
+		humanObj.name = "Abdur Rahim";
+		humanObj.speak();
+	}
+}

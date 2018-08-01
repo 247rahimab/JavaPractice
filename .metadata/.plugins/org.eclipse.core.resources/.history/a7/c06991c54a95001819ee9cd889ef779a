@@ -1,0 +1,25 @@
+package Class;
+public class Animal {
+	// Animal Property
+	String name;
+	String color;
+	boolean isMove = false;
+	
+	public String getName() {
+		String greetingMsg = "Hello !!";
+		greetingMsg+= name;
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	
+	public String getColor() {
+		return color;
+	}
+	public void setColor(String color) {
+		this.color = color;
+	}
+	
+}
+		
